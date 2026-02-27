@@ -1,0 +1,107 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 25 Dec 2025, 12:06:08 am
+    Author     : ADMIN
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HERO */
+header.hero {
+    height: 100vh;
+    margin-top: 56px;
+    background-image: url("https://i.pinimg.com/736x/11/4a/87/114a87e284917ee095c31695ff8cbd4a.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.overlay {
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* ANIMATION */
+.animate {
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* STADIUM CARDS */
+.stadium-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.stadium-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.stadium-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.footer-text {
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+/* Admin looks like normal text */
+.admin-text {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: text;      /* NOT pointer */
+}
+
+/* Even hover should not show anything */
+.admin-text:hover {
+    color: inherit;
+}
+
+/* SEARCH BOX SIZE CONTROL */
+.search-box {
+    max-width: 280px;
+    width: 100%;
+}
+
+/* PREVENT NAV ITEMS FROM WRAPPING */
+.navbar-nav {
+    white-space: nowrap;
+}
+
+/* USERNAME LENGTH CONTROL */
+.username-text {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+
